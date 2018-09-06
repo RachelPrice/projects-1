@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-You can use the [editor on GitHub](https://github.com/JNATION85/projects/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+  <title>{% if page.title %}{{ page.title | escape }} - ONS Digital Publishing Prototype Kit{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.intro-content | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}">
+  <link rel="stylesheet" type="text/css" href="https://cdn.ons.gov.uk/sixteens/cec6659/css/main.css">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="shortcut icon" href="{{ "/favicon.ico" | relative_url }}">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+  <meta name="robots" content="noindex, nofollow">
 
-### Markdown
-<div style="padding:30px;background color:#000;color:#fff;">HELLO</div>
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+</head>
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+  <body>
+TEST
 
-- Bulleted
-- Lists
+  </body>
 
-1. Numbered
-2. List
+  <!--[if gt IE 8]><!-->
+  <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
+  <script type="text/javascript" src="https://beta.ons.gov.uk/js/app.js"></script>
+  <!--<![endif]-->
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JNATION85/projects/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</html>
