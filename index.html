@@ -7,7 +7,10 @@
 
   <title>{% if page.title %}{{ page.title | escape }} - ONS Digital Publishing Prototype Kit{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.intro-content | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}">
-  <link rel="stylesheet" type="text/css" href="https://cdn.ons.gov.uk/sixteens/cec6659/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.ons.gov.uk/sixteens/a62dd01/css/main.css">
+  <link rel="stylesheet" href="{{ path '/css/global.css' }}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
@@ -20,13 +23,81 @@
 
 
   <body>
-TEST
+<div class="secondary-nav col col--lg-two-thirds col--md-two-thirds print--hide">
+  <ul class="secondary-nav__list js-nav-clone__list">
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/releasecalendar">Release calendar</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/methodology">Methodology</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/news">Media</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link  js-nav-clone__link" href="/aboutus">About</a>
+    </li>
+    <li class="secondary-nav__item">
+      <a class="secondary-nav__link icon--hide js-nav-clone__link" target="_blank" rel="noopener noreferrer" href="https://blog.ons.gov.uk/">Blog</a>
+    </li>
+  </ul>
+</div>
+    <div class="page-neutral-intro background--gallery">
+<div class="wrapper">
+<div class="col-wrap">
+<div class="col">
+<nav>
+<div class="breadcrumb-neutral print--hide">
+<ol class="breadcrumb-neutral__list">
+<li class="breadcrumb-neutral__item">
+<a class="breadcrumb-neutral__link" href="/">Home</a>
+</li>
+<li class="breadcrumb-neutral__item">
+<a class="breadcrumb-neutral__link" href="/economy">Economy</a>
+</li>
+<li class="breadcrumb-neutral__item">
+<a class="breadcrumb-neutral__link" href="/economy/nationalaccounts">National accounts</a>
+</li>
+<li class="breadcrumb-neutral__item">
+<a class="breadcrumb-neutral__link" href="/economy/nationalaccounts/uksectoraccounts">UK sector accounts</a>
+</li>
+<li class="breadcrumb-neutral__item">
+Making ends meet: are households living beyond their means?
+</li>
+</ol>
+</div>
+</nav>
+<div class="col col--md-47 col--lg-46">
+<div class="page-neutral-intro__type">Article</div>
+<h1 class="page-neutral-intro__title ">
+Making ends meet: are households living beyond their means?
+</h1>
+<p class="page-neutral-intro__content">Explore how UK household finances have changed in the last 30 years.</p>
+<p class="page-neutral-intro__meta margin-top--0 margin-bottom--3">26 July 2018</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+    
+    
+    
+    
+    <div class="wrapper margin-bottom--2">
+<div class="col-wrap">
+<article class="col col--md-40 col--lg-40 page-neutral-content__main-content margin-top--4 margin-left-md--1">
+  <p>UK households have seen their outgoings surpass their income for the first time in nearly 30 years, our data have shown.</p>
+  </article>
+</div>
+</div>
 
   </body>
 
   <!--[if gt IE 8]><!-->
   <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
   <script type="text/javascript" src="https://beta.ons.gov.uk/js/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
   <!--<![endif]-->
 
 </html>
